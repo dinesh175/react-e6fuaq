@@ -1,38 +1,32 @@
 import React from "react";
 import "./style.css";
-import Navbar from "./component/navbar"
-import { BrowserRouter, Route, Switch,Link } from 'react-router-dom';
-import Signup from "./component/signup"
+import Login from "./component/Login";
+import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
+
 export default function App() {
   return (
     <div>
+      <BrowserRouter>
+        <div>
+          <div className="header">
+            <NavLink activeClassName="active" to="/login">
+              Login
+            </NavLink>
+            <NavLink activeClassName="active" to="/Signup">
+              Signup
+            </NavLink>
 
-    <Navbar />
-   
-      <div className="Form">
-        <div className="form-floating mb-3">
-          <input
-            type="email"
-            className="form-control"
-            id="floatingInput"
-            placeholder="name@example.com"
-          />
-          <label for="floatingInput">Email address</label>
+            
+          </div>
+          <div className="content">
+            <Switch>
+              <Route path="/login" component={Login} />
+               <Route path="/Signup" component={Signup} />
+             
+            </Switch>
+          </div>
         </div>
-        <div className="form-floating">
-          <input
-            type="password"
-            className="form-control"
-            id="floatingPassword"
-            placeholder="Password"
-          />
-          <label for="floatingPassword">Password</label>
-          <br />
-        </div>
-        <button type="button" class="btn btn-primary">
-          login
-        </button>
-      </div>
+      </BrowserRouter>
     </div>
   );
 }
