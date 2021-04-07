@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Login from "./component/Login";
+import Signup from "./component/signup";
 import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
 
 export default function App() {

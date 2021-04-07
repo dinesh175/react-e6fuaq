@@ -1,22 +1,35 @@
-h1, p {
+h1,
+p {
   font-family: Lato;
-  
 }
-.Form
-{
-
+.Form {
   width: 20%;
   margin-top: 350px;
   margin-right: 500px;
   margin-left: 520px;
   border: 20px;
-  
 }
-button
-{
+button {
   margin-left: 100px;
 }
-body{
+body {
   background-color: grey;
 }
+.header {
+  background-color: white;
+  padding: 10px;
+}
+.header a {
+  text-decoration: none;
+  padding: 10px;
+}
+.Formsignup
+{
+  width: 30%;
+  margin-top: 250px;
+  margin-right: 490px;
+  margin-left: 490px;
+  
+  padding: 10px;
 
+}
