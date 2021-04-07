@@ -50,9 +50,11 @@ export default function Signup() {
           <label for="floatingPassword">Password</label>
           <br />
         </div>
+        <div className="signupbutton">
         <button type="button" class="btn btn-primary">
-          login
+          Submit
         </button>
+        </div>
       </div>
   );
 }

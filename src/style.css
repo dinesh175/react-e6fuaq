@@ -28,8 +28,15 @@ body {
   width: 30%;
   margin-top: 250px;
   margin-right: 490px;
-  margin-left: 490px;
-  
+  margin-left: 490px;  
   padding: 10px;
-
+}
+.signupbutton
+{
+  margin-right: 100px;
+  margin-left: 40px;
+}
+.Form ::placeholder
+{
+  color: black;
 }
